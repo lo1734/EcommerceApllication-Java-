@@ -67,7 +67,7 @@ inventory/
 ## 1️⃣ Clone Repository
 
 ```
-git clone <your-repository-url>
+git clone https://github.com/lo1734/EcommerceApllication-Java-.git
 ```
 
 ## 2️⃣ Navigate to Project Directory

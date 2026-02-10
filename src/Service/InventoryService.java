@@ -37,9 +37,14 @@ public class InventoryService implements InventoryOperations{
         int qty = sc.nextInt();
 
         for(Product p: productList){
-            if(p.getId()==id && p.getStock() >= qty){
+            if(p.getId()==id){
                 p.reduceStock(qty);
-                System.out.println(qty+" "+p.getName()+" added successfully.");
+                if(p.getStock() >= qty){
+                    System.out.println(qty+" "+p.getName()+" added successfully.");
+                }
+                else{
+                    System.out.println("Out of Stock.");
+                }
                 break;
             }
         }
